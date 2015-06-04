@@ -144,10 +144,8 @@ class iGyneSecondRegistrationStep( iGyneStep ) :
     # Select segmentation button (disabled)
     roiLabel = qt.QLabel( 'Select segmentation:' )
     self.__roiLabelSelector = slicer.qMRMLNodeComboBox()
-    self.__roiLabelSelector.nodeTypes = ( 'vtkMRMLScalarVolumeNode', '' )
-    self.__roiLabelSelector.addAttribute('vtkMRMLScalarVolumeNode','LabelMap','1')
+    self.__roiLabelSelector.nodeTypes = ( 'vtkMRMLLabelMapVolumeNode', '' )
     self.__roiLabelSelector.toolTip = "Choose the ROI segmentation"
-    self.__roiLabelSelector.nodeTypes = ['vtkMRMLScalarVolumeNode']
     self.__roiLabelSelector.addEnabled = 0
     self.__roiLabelSelector.setMRMLScene(slicer.mrmlScene)
     
