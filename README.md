@@ -1,3 +1,8 @@
+⚠️ As of June 20224, this repository is obsolete.⚠️
+---
+
+This project is not maintained anymore and incompatible with Slicer from version 5.2 due to its dependencies to the Annotations modules.
+
 iGyne
 =====
 ***
