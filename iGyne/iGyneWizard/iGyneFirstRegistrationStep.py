@@ -1057,7 +1057,7 @@ class iGyneFirstRegistrationStep( iGyneStep ) :
     #
     #logFile = open('d:/pyLog.txt', 'w')
     #
-    if volumeNode.GetLabelMap() == 0:
+    if not volumeNode.IsA("vtkMRMLLabelMapVolumeNode"):
       print('Warning: input volume is not labelmap: \'' + volumeNode.GetName() + '\'')
     #  
     numberOfStructureVoxels = 0
